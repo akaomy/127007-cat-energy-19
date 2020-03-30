@@ -8,19 +8,92 @@
             <a class="page-header__logo-link" href="index.html">
                 <img class="page-header__logo-img" src="./source/img/logo-mobile.svg">
             </a>
-            <span>cat energy</span>
+            <span class="page-header__logo-text">cat energy</span>
             <nav class="main-nav">
                 <button class="main-nav__toggle" type="button">
                     <img src="./source/img/mobile-menu.svg">
                 </button>
                 <div class="main-nav__wrapper">
                     <ul class="main-nav__list">
-                        <li class="main-nav__item">Главная</li>
-                        <li class="main-nav__item">Каталог продукции</li>
-                        <li class="main-nav__item">Подбор программы</li>
+                        <li class="main-nav__item"><a href="index.html">Главная</a></li>
+                        <li class="main-nav__item"><a href="#">Каталог продукции</a></li>
+                        <li class="main-nav__item"><a href="form.html">Подбор программы</a></li>
                     </ul>
                 </div>
             </nav>
         </header>
+        <main class="page-main">
+            <section>
+                <h1>Подбор программы</h1>
+                <p>Заполните анкету и мы подберем программу питания для вашего кота</p>
+                <form method="post" action="https://echo.htmlacademy.ru">
+                    <label>Имя:*</label>
+                    <input type="text" value="Барсик">
+                    <label>Вес (кг):*</label>
+                    <input type="text" value="7">
+                    <label>Возраст (лет):</label>
+                    <input type="text" value="7">
+                    <hr />
+                    <label for="weightloss">
+                        <input type="radio" value="weightloss" checked>Похудение
+                    </label>
+                    <label for="weightgain">
+                        <input type="radio" value="weightgain">Набор массы
+                    </label>
+                    <label for="dontknow">
+                        <input type="radio" value="dontknow">Не знаю (Нужен ваш совет)
+                    </label>
+                    <hr />
+                    <h2>Контактные данные (владельца кота)</h2>
+                    <span class="greenline"></span>
+                    <label for="email">
+                        <input type="text" value="kuklachev@gmail.com">E-mail:*
+                        <!-- <a href="./source/img/mail.svg.svg"> how to add icon is -->
+                    </label>
+                    <label for="phone">
+                        <input type="text" value="8 (960) 900-60-90">Телефон:*
+                        <!-- <a href="./source/img/phone.svg.svg"></a> -->
+                    </label>
+                    <h2>Комментарий</h2>
+                    <span class="greenline"></span>
+                    <label for="describe-cat">
+                        <textarea rows="4" cols="50" placeholder="Расскажите обо всех повадках кота"></textarea>
+                    </label>
+                    <h2>Дополнительно</h2>
+                    <label for="sugarsubstitutes">
+                        <input type="sugarsubstitutes" checked>Сахарозаменитель
+                    </label>
+                    <label for="water">
+                        <input type="water">Питьевая вода
+                    </label>
+                    <label for="milk">
+                        <input type="milk">Молоко
+                    </label>
+                    <label for="vitamins">
+                        <input type="vitamins">Витамины
+                    </label>
+                    <button type="button">Отправить заявку</button>
+                    <p>* — Обязательные поля</p>
+                </form>
+            </section>
+        </main>
+        <footer class="page-footer">
+            <img class="footer__logo" src="./source/img/footer-logo.svg" alt="footer cat energy logo">
+            <hr/>
+            <ul class="footer__list">
+                <li class="footer__list-item">
+                    <img class="footer__list-img" src="./source/img/m-vk.svg.svg" alt="vk icon">
+                </li>
+                <li class="footer__list-item">
+                    <img class="footer__list-img" src="./source/img/m-insta.svg.svg" alt="instagram icon">
+                </li>
+                <li class="footer__list-item">
+                    <img  class="footer__list-img" src="./source/img/m-fb.svg" alt="facebook icon">
+                </li>
+            </ul>
+            <hr/>
+            <p class="footer__logo-text">HTML Academy</p>
+            <img class="footer__img-logo" src="./source/img/htmlacademy.svg.svg" alt="htmlacademy logo">
+        </footer>
     </body>
 </html>
