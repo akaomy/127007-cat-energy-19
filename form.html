@@ -23,56 +23,93 @@
             </nav>
         </header>
         <main class="page-main">
-            <section>
-                <h1>Подбор программы</h1>
-                <p>Заполните анкету и мы подберем программу питания для вашего кота</p>
-                <form method="post" action="https://echo.htmlacademy.ru">
-                    <label>Имя:*</label>
-                    <input type="text" value="Барсик">
-                    <label>Вес (кг):*</label>
-                    <input type="text" value="7">
-                    <label>Возраст (лет):</label>
-                    <input type="text" value="7">
-                    <hr />
-                    <label for="weightloss">
-                        <input type="radio" value="weightloss" checked>Похудение
-                    </label>
-                    <label for="weightgain">
-                        <input type="radio" value="weightgain">Набор массы
-                    </label>
-                    <label for="dontknow">
-                        <input type="radio" value="dontknow">Не знаю (Нужен ваш совет)
-                    </label>
-                    <hr />
-                    <h2>Контактные данные (владельца кота)</h2>
-                    <span class="greenline"></span>
-                    <label for="email">
-                        <input type="text" value="kuklachev@gmail.com">E-mail:*
-                        <!-- <a href="./source/img/mail.svg.svg"> how to add icon is -->
-                    </label>
-                    <label for="phone">
-                        <input type="text" value="8 (960) 900-60-90">Телефон:*
-                        <!-- <a href="./source/img/phone.svg.svg"></a> -->
-                    </label>
-                    <h2>Комментарий</h2>
-                    <span class="greenline"></span>
-                    <label for="describe-cat">
-                        <textarea rows="4" cols="50" placeholder="Расскажите обо всех повадках кота"></textarea>
-                    </label>
-                    <h2>Дополнительно</h2>
-                    <label for="sugarsubstitutes">
-                        <input type="sugarsubstitutes" checked>Сахарозаменитель
-                    </label>
-                    <label for="water">
-                        <input type="water">Питьевая вода
-                    </label>
-                    <label for="milk">
-                        <input type="milk">Молоко
-                    </label>
-                    <label for="vitamins">
-                        <input type="vitamins">Витамины
-                    </label>
-                    <button type="button">Отправить заявку</button>
+            <section class="form-section">
+                <h1 class="form__header">Подбор программы</h1>
+                <form class="form-main" method="post" action="https://echo.htmlacademy.ru">
+                    <fieldset>
+                        <legend class="form__slogan">Заполните анкету и мы подберем программу питания для вашего кота</legend>
+                        <ul class="form-main__list">
+                            <li class="form-main__list-item">
+                                <label>Имя:*
+                                    <input type="text" value="Барсик">
+                                </label>
+                            </li>
+                            <li class="form-main__list-item">
+                                <label>Вес (кг):*
+                                    <input type="text" value="7">
+                                </label>
+                            </li>
+                            <li class="form-main__list-item">
+                                <label>Возраст (лет):
+                                    <input type="text" value="7">
+                                </label>
+                            </li>
+                        </ul>
+                        <hr />
+                        <ul>
+                            <li>
+                                <label for="weightloss">
+                                    <input type="radio" value="weightloss" checked>Похудение
+                                </label>    
+                            </li>
+                            <li>
+                                <label for="weightgain">
+                                    <input type="radio" value="weightgain">Набор массы
+                                </label>    
+                            </li>
+                            <li>
+                                <label for="dontknow">
+                                    <input type="radio" value="dontknow">Не знаю (Нужен ваш совет)
+                                </label>    
+                            </li>
+                        </ul>
+                        <hr />
+                        <h2>Контактные данные (владельца кота)</h2>
+                        <span class="greenline"></span>
+                        <ul>
+                            <li>
+                                <label for="email">
+                                    <input type="text" value="kuklachev@gmail.com">E-mail:*
+                                    <!-- <a href="./source/img/mail.svg.svg"> how to add icon is -->
+                                </label>    
+                            </li>
+                            <li>
+                                <label for="phone">
+                                    <input type="text" value="8 (960) 900-60-90">Телефон:*
+                                    <!-- <a href="./source/img/phone.svg.svg"></a> -->
+                                </label>    
+                            </li>
+                        </ul>
+                        <h2>Комментарий</h2>
+                        <span class="greenline"></span>
+                        <label for="describe-cat">
+                            <textarea rows="4" cols="50" placeholder="Расскажите обо всех повадках кота"></textarea>
+                        </label>
+                        <h2>Дополнительно</h2>
+                        <ul>
+                            <li>
+                                <label for="sugarsubstitutes">
+                                    <input type="checkbox" value="sugarsubstitutes" checked>Сахарозаменитель
+                                </label>    
+                            </li>
+                            <li>
+                                <label for="water">
+                                    <input type="checkbox" value="water">Питьевая вода
+                                </label>    
+                            </li>
+                            <li>
+                                <label for="milk">
+                                    <input type="checkbox" value="milk">Молоко
+                                </label>    
+                            </li>
+                            <li>
+                                <label for="vitamins">
+                                    <input type="checkbox" value="vitamins">Витамины
+                                </label>    
+                            </li>
+                        </ul>
+                        <button type="button">Отправить заявку</button>
+                    </fieldset>
                     <p>* — Обязательные поля</p>
                 </form>
             </section>
