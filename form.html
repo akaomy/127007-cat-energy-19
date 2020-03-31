@@ -7,12 +7,12 @@
     <body>
         <header class="page-header">
             <a class="page-header__logo-link" href="index.html">
-                <img class="page-header__logo-img" src="./source/img/logo-mobile.svg">
+                <img class="page-header__logo-img" src="./source/img/logo-mobile.svg" alt="cat energy logo">
             </a>
             <span class="page-header__logo-text">cat energy</span>
             <nav class="main-nav">
                 <button class="main-nav__toggle" type="button">
-                    <img src="./source/img/mobile-menu.svg">
+                    <img src="./source/img/mobile-menu.svg" alt="menu icon toggle">
                 </button>
                 <div class="main-nav__wrapper">
                     <ul class="main-nav__list">
@@ -50,17 +50,17 @@
                         <ul class="form__goals-list">
                             <li class="form__goals-list-item">
                                 <label for="weightloss">
-                                    <input type="radio" value="weightloss" checked>Похудение
+                                    <input id="weightloss" type="radio" value="weightloss" checked>Похудение
                                 </label>    
                             </li>
                             <li class="form__goals-list-item">
                                 <label for="weightgain">
-                                    <input type="radio" value="weightgain">Набор массы
+                                    <input id="weightgain" type="radio" value="weightgain">Набор массы
                                 </label>    
                             </li>
                             <li class="form__goals-list-item">
                                 <label for="dontknow">
-                                    <input type="radio" value="dontknow">Не знаю (Нужен ваш совет)
+                                    <input id="dontknow" type="radio" value="dontknow">Не знаю (Нужен ваш совет)
                                 </label>    
                             </li>
                         </ul>
@@ -70,13 +70,13 @@
                         <ul class="form__contact-info-list">
                             <li class="form__contact-info-list-item">
                                 <label for="email">
-                                    <input type="text" value="kuklachev@gmail.com">E-mail:*
+                                    <input id="email" type="text" value="kuklachev@gmail.com">E-mail:*
                                     <!-- <a href="./source/img/mail.svg.svg"> how to add icon is -->
                                 </label>    
                             </li>
                             <li class="form__contact-info-list-item">
                                 <label for="phone">
-                                    <input type="text" value="8 (960) 900-60-90">Телефон:*
+                                    <input id="phone" type="text" value="8 (960) 900-60-90">Телефон:*
                                     <!-- <a href="./source/img/phone.svg.svg"></a> -->
                                 </label>    
                             </li>
@@ -84,28 +84,28 @@
                         <h2 class="form__comment-header">Комментарий</h2>
                         <span class="form__greenline"></span>
                         <label for="describe-cat">
-                            <textarea rows="4" cols="50" placeholder="Расскажите обо всех повадках кота"></textarea>
+                            <textarea id="describe-cat" rows="4" cols="50" placeholder="Расскажите обо всех повадках кота"></textarea>
                         </label>
                         <h2 class="form__more-header">Дополнительно</h2>
                         <ul class="form__more-options-list">
                             <li class="form__more-options-list-item">
                                 <label for="sugarsubstitutes">
-                                    <input type="checkbox" value="sugarsubstitutes" checked>Сахарозаменитель
+                                    <input id="sugarsubstitutes" type="checkbox" value="sugarsubstitutes" checked>Сахарозаменитель
                                 </label>    
                             </li>
                             <li class="form__more-options-list-item">
                                 <label for="water">
-                                    <input type="checkbox" value="water">Питьевая вода
+                                    <input id="water" type="checkbox" value="water">Питьевая вода
                                 </label>    
                             </li>
                             <li class="form__more-options-list-item">
                                 <label for="milk">
-                                    <input type="checkbox" value="milk">Молоко
+                                    <input id="milk" type="checkbox" value="milk">Молоко
                                 </label>    
                             </li>
                             <li class="form__more-options-list-item">
                                 <label for="vitamins">
-                                    <input type="checkbox" value="vitamins">Витамины
+                                    <input id="vitamins" type="checkbox" value="vitamins">Витамины
                                 </label>    
                             </li>
                         </ul>
