@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Catenegry</title>
+    </head>
+    <body>
+        <header class="page-header">
+            <a class="page-header__logo-link" href="index.html">
+                <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="cat energy logo">
+            </a>
+            <span class="page-header__logo-text">cat energy</span>
+            <nav class="main-nav">
+                <a href="#" class="main-nav__toggle"> 
+                    <img src="img/mobile-menu.svg" alt="menu icon toggle">
+                </a>
+                <div class="main-nav__wrapper">
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item"><a href="index.html">Главная</a></li>
+                        <li class="main-nav__item"><a href="catalog.html">Каталог продукции</a></li>
+                        <li class="main-nav__item"><a href="#">Подбор программы</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main class="page-main">
+            <section class="form__wrapper">
+                <h1 class="form__text-header">Подбор программы</h1>
+                <form class="form__main-content" method="post" action="https://echo.htmlacademy.ru">
+                    <fieldset class="form__fieldset-elements">
+                        <legend class="form__slogan">Заполните анкету и мы подберем программу питания для вашего кота</legend>
+                        <ul class="form__user-info-list">
+                            <li class="form__user-info-list-item">
+                                <label class="form__user-info-list-item-label">Имя:*
+                                    <input class="form__user-info-list-item-input" type="text" value="Барсик">
+                                </label>
+                            </li>
+                            <li class="form__user-info-list-item">
+                                <label class="form__user-info-list-item-label">Вес (кг):*
+                                    <input class="form__user-info-list-item-input" type="text" value="7">
+                                </label>
+                            </li>
+                            <li class="form__user-info-list-item">
+                                <label class="form__user-info-list-item-label">Возраст (лет):
+                                    <input class="user-info-list-item-input" type="text" value="7">
+                                </label>
+                            </li>
+                        </ul>
+                        <hr class="form__separator"/>
+                        <ul class="form__goals-list">
+                            <li class="form__goals-list-item">
+                                <label class="form__goals-list-item-label" for="weightloss">
+                                    <input class="form__goals-list-item-input" id="weightloss" type="radio" value="weightloss" checked>Похудение
+                                </label>    
+                            </li>
+                            <li class="form__goals-list-item">
+                                <label class="form__goals-list-item-label" for="weightgain">
+                                    <input class="form__goals-list-item-input" id="weightgain" type="radio" value="weightgain">Набор массы
+                                </label>    
+                            </li>
+                            <li class="form__goals-list-item">
+                                <label class="form__goals-list-item-label" for="dontknow">
+                                    <input class="form__goals-list-item-input" id="dontknow" type="radio" value="dontknow">Не знаю (Нужен ваш совет)
+                                </label>    
+                            </li>
+                        </ul>
+                        <hr class="form__separator"/>
+                        <h2 class="form__contact-info-header">Контактные данные (владельца кота)</h2>
+                        <span class="form__greenline"></span>
+                        <ul class="form__contact-info-list">
+                            <li class="form__contact-info-list-item">
+                                <label class="form__contact-info-list-item-label" for="email">
+                                    <input class="form__contact-info-list-item-input" id="email" type="text" value="kuklachev@gmail.com">E-mail:*
+                                    <!-- <a href="img/mail.svg.svg"> how to add the icons? -->
+                                </label>    
+                            </li>
+                            <li class="form__contact-info-list-item">
+                                <label class="form__contact-info-list-item-label" for="phone">
+                                    <input class="form__contact-info-list-item-input" id="phone" type="text" value="8 (960) 900-60-90">Телефон:*
+                                    <!-- <a href="img/phone.svg.svg"></a> -->
+                                </label>    
+                            </li>
+                        </ul>
+                        <h2 class="form__comment-header">Комментарий</h2>
+                        <span class="form__greenline"></span>
+                        <label class="form__textarea-describe" for="describe-cat">
+                            <textarea id="describe-cat" rows="4" cols="50" placeholder="Расскажите обо всех повадках кота"></textarea>
+                        </label>
+                        <h2 class="form__more-header">Дополнительно</h2>
+                        <ul class="form__more-options-list">
+                            <li class="form__more-options-list-item">
+                                <label class="form__more-options-list-item-label" for="sugarsubstitutes">
+                                    <input class="form__more-options-list-item-input" id="sugarsubstitutes" type="checkbox" value="sugarsubstitutes" checked>Сахарозаменитель
+                                </label>    
+                            </li>
+                            <li class="form__more-options-list-item">
+                                <label class="form__more-options-list-item-label" for="water">
+                                    <input class="form__more-options-list-item-input" id="water" type="checkbox" value="water">Питьевая вода
+                                </label>    
+                            </li>
+                            <li class="form__more-options-list-item">
+                                <label class="form__more-options-list-item-label" for="milk">
+                                    <input class="form__more-options-list-item-input" id="milk" type="checkbox" value="milk">Молоко
+                                </label>    
+                            </li>
+                            <li class="form__more-options-list-item">
+                                <label class="form__more-options-list-item-label" for="vitamins">
+                                    <input class="form__more-options-list-item-input" id="vitamins" type="checkbox" value="vitamins">Витамины
+                                </label>    
+                            </li>
+                        </ul>
+                        <button class="form__submit-btn" type="button">Отправить заявку</button>
+                    </fieldset>
+                    <p class="form__legend-info">* — Обязательные поля</p>
+                </form>
+            </section>
+        </main>
+        <footer class="page-footer">
+            <img class="page-footer__logo" src="img/footer-logo.svg" alt="footer cat energy logo">
+            <hr/>
+            <ul class="page-footer__list">
+                <li class="page-footer__list-item">
+                    <img class="page-footer__list-img" src="img/m-vk.svg.svg" alt="vk icon">
+                </li>
+                <li class="page-footer__list-item">
+                    <img class="page-footer__list-img" src="img/m-insta.svg.svg" alt="instagram icon">
+                </li>
+                <li class="page-footer__list-item">
+                    <img  class="page-footer__list-img" src="img/m-fb.svg" alt="facebook icon">
+                </li>
+            </ul>
+            <hr/>
+            <p class="page-footer__logo-text">HTML Academy</p>
+            <img class="page-footer__img-logo" src="img/htmlacademy.svg.svg" alt="htmlacademy logo">
+        </footer>
+    </body>
+</html>
