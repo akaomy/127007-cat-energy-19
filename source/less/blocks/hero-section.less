@@ -1,7 +1,28 @@
+@import "../common/variables.less";
+
+.hero-section {
+    // min-height: 700px;
+}
+
+.hero-section__bkg-img {
+    background-image: @heroimg; // how to make it stretch for full width of a screen
+}
+
+.hero-section__content-wrapper {
+    position: relative;
+    top: -300px;
+}
+
 .hero-section__header-text {
-    font-size: @fontsizehero;
+    font-size: @fontsizeheader;
+    color: @white;
 }
 
 .hero-section__paragraph-slogan {
-    font-size: @fontsizeheroparagraph;
+    font-size: @fontsizeparagraph;
+    color: @white;
+}
+
+.hero-section__action-btn {
+    font-size: @fontsizeparagraph;
 }

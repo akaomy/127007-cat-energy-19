@@ -4,14 +4,16 @@
         <meta charset="UTF-8">
         <title>Catenegry</title>
         <link rel="stylesheet" href="./css/style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <header class="page-header">
             <span class="page-header__logo-wrapper">
                 <img class="page-header__logo-img" src="img/hero-img-mobile.png" alt="cat energy logo">
             </span>
-            <span class="page-header__logo-text">cat energy</span>
+            <span class="page-header__logo-text">
+                <img src="../../img/logo-mobile-header.png" alt="logo text">
+            </span>
             <nav class="page-header__main-nav">
                 <a href="#" class="page-header__main-nav-toggle">
                     <img src="img/mobile-menu.png" alt="menu icon toggle">
@@ -28,14 +30,18 @@
         <main class="page-main">
             <section class="hero-section">
                 <div class="hero-section__bkg-img"></div>
-                <h1 class="hero-section__header-text">Функциональное питание для котов</h1>
-                <p class="hero-section__paragraph-slogan">Занялся собой? Займись котом!</p>
-                <img class="hero-section__can-img" src="img/index-can-mobile.png" alt="food can">
-                <a href="#" class="hero-section__action-btn">Подобрать программу</a>
+                <div class="hero-section__content-wrapper">
+                    <h1 class="hero-section__header-text">Функциональное питание для котов</h1>
+                    <p class="hero-section__paragraph-slogan">Занялся собой? Займись котом!</p>
+                    <img class="hero-section__can-img" src="img/index-can-mobile.png" alt="food can">
+                    <a href="#" class="hero-section__action-btn">Подобрать программу</a>
+                </div>
             </section>
             <section class="cards-section">
                 <div class="card">
-                    <img class="card__icon" src="img/cat-icon.png" alt="cat icon">
+                    <span class="card__icon-wrapper">
+                        <img class="card__icon" src="img/cat-icon.png" alt="cat icon">
+                    </span>
                     <h2 class="card__title">Похудение</h2>
                     <p class="card__description">
                         Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету!                        Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
@@ -44,7 +50,9 @@
                     <img class="card__next-arrow" src="img/right-arrow-long.png" alt="right arrow">
                 </div>
                 <div class="card">
-                    <img class="card__icon" src="img/cat-icon2.png" alt="cat icon">
+                    <span class="card__icon-wrapper">
+                        <img class="card__icon" src="img/cat-icon2.png" alt="cat icon">
+                    </span>
                     <h2 class="card__title">Набор массы</h2>
                     <p class="card__description">
                         Заработать авторитет среди дворовых котов и даже собак?
@@ -64,7 +72,7 @@
                 </div>
                 <div class="advantage__advantage-wrapper">
                     <span class="advantage__icon-wrapper">
-                        <img class="advantage__icon" src="img/advantage-2.png" alt="liquid icon">
+                        <img class="advantage__icon" src="img/andvantage-2.png" alt="liquid icon">
                     </span>
                     <p class="advantage__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
                 </div>
@@ -98,12 +106,12 @@
                 <p class="beforeafter__meal-cost">Затраты на питание: 15 000 руб.</p>
                 <img class="beforeafter__before-img" src="img/before-mobile.png" alt="before cat">
                 <img class="beforeafter__after-img" src="img/after-mobile.png" alt="after cat">
-                <span class="beforeafter__before-text">Было</span>
+                <span class="beforeafter__compare-text">Было</span>
                 <label class="beforeafter__switch">
                     <input class="beforeafter__checkbox" type="checkbox">
                     <span class="beforeafter__slider"></span>
                 </label>
-                <span class="beforeafter__after-text">Стало</span>
+                <span class="beforeafter__compare-text">Стало</span>
             </section>
             <section class="contacts">
                 <h4 class="contacts__header">приглашаем  к сотрудничеству  дилеров!</h4>
@@ -116,18 +124,18 @@
             <hr/>
             <ul class="page-footer__list">
                 <li class="page-footer__list-item">
-                    <img class="page-footer__list-img" src="img/m-vk.svg.svg" alt="vk icon">
+                    <img class="page-footer__list-img" src="img/m-vk.svg.png" alt="vk icon">
                 </li>
                 <li class="page-footer__list-item">
-                    <img class="page-footer__list-img" src="img/m-insta.svg.svg" alt="instagram icon">
+                    <img class="page-footer__list-img" src="img/m-insta.svg.png" alt="instagram icon">
                 </li>
                 <li class="page-footer__list-item">
-                    <img  class="page-footer__list-img" src="img/m-fb.svg" alt="facebook icon">
+                    <img  class="page-footer__list-img" src="img/m-fb.svg.png" alt="facebook icon">
                 </li>
             </ul>
             <hr/>
             <p class="page-footer__logo-text">HTML Academy</p>
-            <img class="page-footer__img-logo" src="img/htmlacademy.svg.svg" alt="htmlacademy logo">
+            <img class="page-footer__img-logo" src="img/htmlacademy.svg.png" alt="htmlacademy logo">
         </footer>
     </body>
 </html>
