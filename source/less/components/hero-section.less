@@ -1,9 +1,11 @@
 @import "../variables.less";
 
 .hero-section__bkg-img {
-    background-image: @heroimg; // how to make it stretch for full width of a screen
+    background-image: @heroimg;
     background-size: cover;
     background-position: 50%;
+    background-repeat: no-repeat;
+    min-height: 305px;
 }
 
 .hero-section__content-wrapper {
@@ -11,16 +13,37 @@
     top: -300px;
 }
 
-.hero-section__header-text {
-    font-size: @fontsizeheader;
-    color: @white;
-}
-
-.hero-section__paragraph-slogan {
-    font-size: @fontsizeparagraph;
-    color: @white;
+.hero-section__can-img {
+    position: absolute;
+    margin: 0 15%;
 }
 
 .hero-section__action-btn {
-    font-size: @fontsizeparagraph;
+    font-family: @Oswald;
+    font-size: @paragraphsize;
+    color: white;
+    text-transform: uppercase;
+    position: absolute; // how to move this button down under the image?
+    top: 400px; 
+    padding: 16px 71px;
+    background-color: @accentgreen;
+    left: 50%; // how to make the text tretch in one line?
+    transform: translate(-50%, 0);
+}
+
+.hero-section__header-text, 
+.hero-section__paragraph-slogan {
+    font-family: @Oswald;
+    text-align: center;
+    color: @white;
+}
+
+.hero-section__header-text {
+    font-size: @headersize;
+    padding: 0 20px;
+}
+
+.hero-section__paragraph-slogan {
+    font-size: @paragraphsize;
+    text-transform: uppercase;
 }
