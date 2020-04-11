@@ -1,9 +1,38 @@
 @import "../variables.less";
 
+.form__wrapper {
+    padding-top: 30px;
+    border-top: 1px solid @bordergrey;
+}
+
 .form__text-header {
+    font-family: @Oswald;
+    font-size: @headersize;
+    font-weight: @weighregular;
     margin: 0 @margincommon;
+}
+
+.form__slogan {
+    font-family: @Oswald;
+    font-size: @paragraphsize;
+    font-weight: @weighregular;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-top: 40px;
+    width: 226px;
 }
 
 .form__main-content {
     margin: 0 @margincommon;
+}
+
+.form__fieldset-elements {
+    // how to change width of the fieldset to fit on mobile screen?
+    border: 0;
+}
+
+.form__legend-info {
+    font-family: @Arial;
+    font-size: @paragraphsize;
+    text-align: center;
 }
