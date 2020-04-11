@@ -5,19 +5,24 @@
         <title>Catenegry</title>
         <link rel="stylesheet" href="./css/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
     </head>
     <body>
         <header class="page-header">
-            <span class="page-header__logo-wrapper">
-                <img class="page-header__logo-img" src="img/hero-img-mobile.png" alt="cat energy logo">
-            </span>
-            <span class="page-header__logo-text">
-                <img src="../../img/logo-mobile-header.png" alt="logo text">
-            </span>
+            <div class="page-header__header-wrapper">
+                <span class="page-header__logo-wrapper">
+                    <img class="page-header__logo-img" src="img/hero-img-mobile.png" alt="cat energy logo">
+                </span>
+                <span class="page-header__logo-text">
+                    <img src="../../img/logo-mobile-header.png" alt="logo text">
+                </span>
+                <span class="page-header__main-nav-toggle">
+                    <a href="#" class="page-header__main-nav-toggle-link">
+                        <img src="img/mobile-menu.png" alt="menu icon toggle">
+                    </a>
+                </span>
+            </div>
             <nav class="page-header__main-nav">
-                <a href="#" class="page-header__main-nav-toggle">
-                    <img src="img/mobile-menu.png" alt="menu icon toggle">
-                </a>
                 <div class="page-header__main-nav-wrapper">
                     <ul class="page-header__main-nav-list">
                         <li class="page-header__main-nav-item"><a href="#">Главная</a></li>
@@ -117,28 +122,32 @@
                 <span class="beforeafter__compare-text">Стало</span>
             </section>
             <section class="contacts">
-                <h4 class="contacts__header">приглашаем  к сотрудничеству  дилеров!</h4>
-                <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-                <img class="contacts__map" src="https://via.placeholder.com/150x150" alt="map">
+                <div class="contacts__info-wrapper">
+                    <h4 class="contacts__header">приглашаем  к сотрудничеству  дилеров!</h4>
+                    <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+                </div>
+                <img class="contacts__map" src="./img/map.png" alt="map">
             </section>
         </main>
         <footer class="page-footer">
-            <img class="page-footer__logo" src="img/footer-logo.svg" alt="footer cat energy logo">
-            <hr/>
-            <ul class="page-footer__list">
-                <li class="page-footer__list-item">
-                    <img class="page-footer__list-img" src="img/m-vk.svg.png" alt="vk icon">
-                </li>
-                <li class="page-footer__list-item">
-                    <img class="page-footer__list-img" src="img/m-insta.svg.png" alt="instagram icon">
-                </li>
-                <li class="page-footer__list-item">
-                    <img  class="page-footer__list-img" src="img/m-fb.svg.png" alt="facebook icon">
-                </li>
-            </ul>
-            <hr/>
-            <p class="page-footer__logo-text">HTML Academy</p>
-            <img class="page-footer__img-logo" src="img/htmlacademy.svg.png" alt="htmlacademy logo">
+            <img class="page-footer__logo" src="img/footer-logo.png" alt="footer cat energy logo">
+            <div class="page-footer__list-wrapper">
+                <ul class="page-footer__list">
+                    <li class="page-footer__list-item">
+                        <img class="page-footer__list-img" src="img/m-vk.svg.png" alt="vk icon">
+                    </li>
+                    <li class="page-footer__list-item">
+                        <img class="page-footer__list-img" src="img/m-insta.svg.png" alt="instagram icon">
+                    </li>
+                    <li class="page-footer__list-item">
+                        <img  class="page-footer__list-img" src="img/m-fb.svg.png" alt="facebook icon">
+                    </li>
+                </ul>
+            </div>
+            <div class="page-footer__logo-section">
+                <p class="page-footer__logo-text">HTML Academy</p>
+                <img class="page-footer__img-logo" src="img/htmlacademy.svg.png" alt="htmlacademy logo">
+            </div>
         </footer>
     </body>
 </html>
