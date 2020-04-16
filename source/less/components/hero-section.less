@@ -11,6 +11,7 @@
 .hero-section__content-wrapper {
     position: relative;
     top: -300px;
+    margin: 0 @margincommon;
 }
 
 .hero-section__can-img {
@@ -19,15 +20,10 @@
 }
 
 .hero-section__action-btn { 
-    .fontsetup(@Oswald, @paragraph, @regular);
-    color: white;
-    text-transform: uppercase;
+    .button;
     position: absolute;
     top: 400px; 
-    padding: 20px;
-    background-color: @accentgreen;
-    left: 50%; 
-    transform: translate(-50%, 0);
+    padding: 15px 80px;
 }
 
 .hero-section__header-text, 

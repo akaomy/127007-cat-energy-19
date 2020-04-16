@@ -18,8 +18,25 @@
     width: 226px;
 }
 
-.form__contact-info-header {
+.form__contact-info-header,
+.form__comment-header,
+.form__more-header {
     width: 180px;
+    .fontsetup(@Oswald, @title, @regular);
+}
+
+.form__slogan,
+.form__user-info-list-item-input, 
+.form__goals-list-item-label,
+.form__contact-info-list-item-input,
+.form__more-options-list-item {
+    color: @paragraphcolor;
+}
+
+.form__contact-info-list-item-label,
+.form__contact-info-list-item-input {
+    .fontsetup(@Oswald, @links, @regular);
+    text-transform: uppercase;
 }
 
 .form__main-content {
@@ -33,17 +50,23 @@
     margin: 0;
 }
 
+.form__legend-info {
+    .fontsetup(@Arial, @paragraph, @regular);
+    text-align: center;
+}
+
+.form__textarea-describe-placeholder,
+.form__more-options-list-item,
+.form__goals-list-item,
 .form__user-info-list-item {
     .fontsetup(@Oswald, @links, @regular);
     text-transform: uppercase;
 }
 
-.form__goals-list-item {
-    .fontsetup(@Oswald, @links, @regular);
-    text-transform: uppercase;
-}
+.form__submit-btn {
+    .button;
+    margin: auto;
+    color: @white;
+    padding: 15px 80px;
 
-.form__legend-info {
-    .fontsetup(@Arial, @paragraph, @regular);
-    text-align: center;
 }
