@@ -3,12 +3,12 @@
 @Oswald: 'Oswald', sans-serif;
 @header: 36px;
 @title: 24px;
-@fontsizemenu: 20px;
+@menu: 20px;
 @links: 16px;
 @paragraph: 14px;
 @small: 12px;
 @regular: 400;
-@fontweightmedium: 500;
+@medium: 500;
 @lineheightgeneral: 1.2;
 
 // color
@@ -23,3 +23,10 @@
 
 // paddings and margins
 @margincommon: 20px;
+
+// mixins
+.fontsetup(@fontf, @fsize, @fweight) {
+    font-family: @fontf;
+    font-size: @fsize;
+    font-weight: @fweight;
+}

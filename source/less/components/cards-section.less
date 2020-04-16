@@ -10,8 +10,7 @@
 }
 
 .card__title {
-    font-family: @Oswald;
-    font-size: @title;
+    .fontsetup(@Oswald, @title, @regular);
     text-transform: uppercase;
     font-weight: @regular;
 }
@@ -21,11 +20,9 @@
 }
 
 .card__learn-more {
-    font-family: @Oswald;
-    font-size: @links;
+    .fontsetup(@Oswald, @links, @regular);
     text-transform: uppercase;
     a:link {
-        color: black; // how to change color here?
         text-decoration:none;
     }
 }

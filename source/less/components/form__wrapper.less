@@ -6,20 +6,20 @@
 }
 
 .form__text-header {
-    font-family: @Oswald;
-    font-size: @header;
-    font-weight: @regular;
+    .fontsetup(@Oswald, @header, @regular);
     margin: 0 @margincommon;
 }
 
 .form__slogan {
-    font-family: @Oswald;
-    font-size: @paragraph;
-    font-weight: @regular;
+    .fontsetup(@Oswald, @paragraph, @regular);
     text-transform: uppercase;
     display: inline-block;
     padding-top: 40px;
     width: 226px;
+}
+
+.form__contact-info-header {
+    width: 180px;
 }
 
 .form__main-content {
@@ -27,12 +27,23 @@
 }
 
 .form__fieldset-elements {
-    // how to change width of the fieldset to fit on mobile screen?
+    width: 280px;
     border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.form__user-info-list-item {
+    .fontsetup(@Oswald, @links, @regular);
+    text-transform: uppercase;
+}
+
+.form__goals-list-item {
+    .fontsetup(@Oswald, @links, @regular);
+    text-transform: uppercase;
 }
 
 .form__legend-info {
-    font-family: @Arial;
-    font-size: @paragraph;
+    .fontsetup(@Arial, @paragraph, @regular);
     text-align: center;
 }

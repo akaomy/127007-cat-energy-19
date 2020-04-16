@@ -5,9 +5,7 @@
 }
 
 .beforeafter__header {
-    font-size: @header;
-    font-family: @Oswald;
-    font-weight: @regular;
+    .fontsetup(@Oswald, @header, @regular)
 }
 
 .beforeafter__description {
@@ -34,22 +32,18 @@
 }
 
 .beforeafter__stat {
-    font-family: @Oswald;
-    font-size: @title;
-    font-weight: @regular;
+    .fontsetup(@Oswald, @title, @regular);
     text-align: center;
     text-transform: uppercase;
 }
 
 .beforeafter__stat-description {
-    font-family: @Arial;
-    font-size: @small;
+    .fontsetup(@Arial, @small, @regular);
     text-align: center;
 }
 
 .beforeafter__meal-cost {
-    font-family: @Oswald;
-    font-size: @paragraph;
+    .fontsetup(@Oswald, @paragraph, @regular);
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 60px;

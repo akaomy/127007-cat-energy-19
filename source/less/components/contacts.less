@@ -10,16 +10,15 @@
 }
 
 .contacts__header {
-    font-family: @Oswald;
-    font-size: @links;
+    .fontsetup(@Oswald, @links, @regular);
     text-transform: uppercase;
     width: 50%;
     float: left;
 }
 
 .contacts__address {
-    font-family: @Arial;
-    font-size: @paragraph;
+    .fontsetup(@Arial, @paragraph, @regular);
+    padding-top: 7px;
     width: 50%;
     float: right;
 }
