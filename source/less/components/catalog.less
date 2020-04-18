@@ -5,7 +5,8 @@
 }
 
 .catalog__card {
-    margin: 0 @margincommon;
+    margin: 50px @margincommon;
+
 }
 
 .catalog__card-header {
@@ -14,27 +15,38 @@
 }
 
 .catalog__product-img-wrapper { // can't make it place on one line
-    border: 1px solid red;
-    width: 49%;
+    width: 30%;
     display: inline-block;
 }
 
 .catalog__product-info-wrapper {
-    border: 1px solid yellow;
-    width: 49%;
+    width: 55%;
     display: inline-block;
+    float: right;
 }
 
 .catalog__product-header {
     .fontsetup(@Oswald, @links, @regular);
+    text-transform: uppercase;
+    width: 72px;
 }
 
 .catalog__product-info-row {
     .fontsetup(@Arial, @small, @regular);
 }
 
+.catalog__product-info-row td:first-child {
+    padding-right: 90px;
+}
+
+.catalog__product-info-row td:last-child {
+    text-align: right;
+}
+
 .catalog__product-btn-order {
-    .button
+    .button;
+    // padding: 15px;
+    display: block;
 }
 
 .catalog__more {
