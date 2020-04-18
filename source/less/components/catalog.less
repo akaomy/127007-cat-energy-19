@@ -1,12 +1,9 @@
 @import "../variables.less";
 
-.catalog {
-    border-top: 1px solid @bordergrey;
-}
 
 .catalog__card {
     margin: 50px @margincommon;
-
+    // border-top: 1px solid @bordergrey;
 }
 
 .catalog__card-header {
@@ -45,13 +42,11 @@
 
 .catalog__product-btn-order {
     .button;
-    // padding: 15px;
     display: block;
+    width: auto;
 }
 
 .catalog__more {
-    border-top: 1px solid @bordergrey;
-    border-bottom: 1px solid @bordergrey;
     margin: @margincommon;
     text-align: center;
 }
@@ -65,3 +60,6 @@
     .fontsetup(@Arial, @small, @regular);
 }
 
+.catalog__product-show-more {
+    .fontsetup(@Arial, @links, @regular);
+}

@@ -1,0 +1,37 @@
+@import "../variables.less";
+
+.extra {
+    margin: 0 @margincommon;
+}
+
+.extra__header {
+    .fontsetup(@Oswald, @title, @regular);
+}
+
+.extra__product {
+    .fontsetup(@Oswald, @links, @regular);
+}
+
+.extra__product-title {
+    .fontsetup(@Oswald, @links, @regular);
+    text-transform: uppercase;
+}
+
+.extra__product-info {
+    .fontsetup(@Arial, @paragraph, @regular);
+}
+
+.extra__product-order-btn {
+    .button;
+    display: block;
+    width: auto;
+}
+
+.extra__bkg-img {
+    background-image: @extraimg;
+    display: block;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    min-height: 305px;
+}
