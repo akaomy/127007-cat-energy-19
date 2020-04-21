@@ -33,7 +33,8 @@
 }
 
 .form__contact-info-list-item-label,
-.form__contact-info-list-item-input {
+.form__contact-info-list-item-input,
+.form__contact-info-list-item-text {
     .fontsetup(@Oswald, @links, @regular);
     text-transform: uppercase;
 }
@@ -76,16 +77,8 @@
     border-bottom: 1px solid @bordergrey;
 }
 
-.form__label-name {
-    // display: inline-block;
-}
-
 .form__user-info-list-item-input {
-    border: 1px solid @bordergrey;
-    padding: 10px;
-    width: 280px;
-
-    // display: inline-block;
+    .inputstyle
 }
 
 .form__goals-list {
@@ -97,6 +90,28 @@
     padding: 10px 0;
 }
 
-.form__contact-info-header {
-    // .fontsetup(@Oswald, @title, @regular);
+.form__goals-list-item-text {
+    padding-left: 10px;
 }
+
+.form__contact-info-header {
+    .fontsetup(@Oswald, @title, @regular);
+    width: 280px;
+}
+
+.form__contact-info-list-item-input {
+    .inputstyle
+}
+
+.form__textarea-describe-placeholder {
+    border: 1px solid @bordergrey;
+    padding: 7px;
+    text-align: center;
+    margin-top: 10px;
+}   
+
+// how to set paddings between lines?
+.form__more-options-list-item-label {
+    padding: 10px 0;
+}
+
