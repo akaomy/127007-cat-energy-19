@@ -1,6 +1,6 @@
 // font
-@Arial: 'Arial', sans-serif;
-@Oswald: 'Oswald', sans-serif;
+@Arial: "Arial", sans-serif;
+@Oswald: "Oswald", sans-serif;
 @header: 36px;
 @title: 24px;
 @menu: 20px;
@@ -27,22 +27,22 @@
 
 // mixins
 .fontsetup(@fontf, @fsize, @fweight) {
-    font-family: @fontf;
-    font-size: @fsize;
-    font-weight: @fweight;
+  font-family: @fontf;
+  font-size: @fsize;
+  font-weight: @fweight;
 }
 
 .button {
-    .fontsetup(@Oswald, @paragraph, @regular);
-    color: @white;
-    text-transform: uppercase;
-    background-color: @accentgreen;
-    border: none;
-    width: 100%;
+  .fontsetup(@Oswald, @paragraph, @regular);
+  color: @white;
+  text-transform: uppercase;
+  background-color: @accentgreen;
+  border: none;
+  width: 100%;
 }
 
 .inputstyle {
-    border: 1px solid @bordergrey;
-    padding: 7px;
-    width: 280px;
+  border: 1px solid @bordergrey;
+  padding: 7px;
+  width: 280px;
 }

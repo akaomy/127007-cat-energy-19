@@ -1,117 +1,115 @@
 @import "../variables.less";
 
 .form__wrapper {
-    padding-top: 30px;
-    border-top: 1px solid @bordergrey;
+  padding-top: 30px;
+  border-top: 1px solid @bordergrey;
 }
 
 .form__text-header {
-    .fontsetup(@Oswald, @header, @regular);
-    margin: 0 @margincommon;
+  .fontsetup(@Oswald, @header, @regular);
+  margin: 0 @margincommon;
 }
 
 .form__slogan {
-    .fontsetup(@Oswald, @paragraph, @regular);
-    text-transform: uppercase;
-    display: inline-block;
-    padding-top: 40px;
-    width: 226px;
+  .fontsetup(@Oswald, @paragraph, @regular);
+  text-transform: uppercase;
+  display: inline-block;
+  padding-top: 40px;
+  width: 226px;
 }
 
 .form__comment-header,
 .form__more-header {
-    width: 180px;
-    .fontsetup(@Oswald, @title, @regular);
+  width: 180px;
+  .fontsetup(@Oswald, @title, @regular);
 }
 
 .form__slogan,
-.form__user-info-list-item-input, 
+.form__user-info-list-item-input,
 .form__goals-list-item-label,
 .form__contact-info-list-item-input,
 .form__more-options-list-item {
-    color: @paragraphcolor;
+  color: @paragraphcolor;
 }
 
 .form__contact-info-list-item-label,
 .form__contact-info-list-item-input,
 .form__contact-info-list-item-text {
-    .fontsetup(@Oswald, @links, @regular);
-    text-transform: uppercase;
+  .fontsetup(@Oswald, @links, @regular);
+  text-transform: uppercase;
 }
 
 .form__main-content {
-    margin: 0 @margincommon;
+  margin: 0 @margincommon;
 }
 
 .form__fieldset-elements {
-    border: 0;
-    padding: 0;
-    margin: 0;
+  border: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .form__legend-info {
-    .fontsetup(@Arial, @paragraph, @regular);
-    text-align: center;
+  .fontsetup(@Arial, @paragraph, @regular);
+  text-align: center;
 }
 
 .form__textarea-describe-placeholder,
 .form__more-options-list-item,
 .form__goals-list-item,
 .form__user-info-list-item {
-    .fontsetup(@Oswald, @links, @regular);
-    text-transform: uppercase;
+  .fontsetup(@Oswald, @links, @regular);
+  text-transform: uppercase;
 }
 
 .form__submit-btn {
-    .button;
-    margin: auto;
-    color: @white;
-    padding: 15px 80px;
-
+  .button;
+  margin: auto;
+  color: @white;
+  padding: 15px 80px;
 }
 
 .form__user-info-list {
-    margin-top: 40px;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid @bordergrey;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid @bordergrey;
+  // box-sizing: border-box;
 }
 
 .form__user-info-list-item-input {
-    .inputstyle
+  .inputstyle;
 }
 
 .form__goals-list {
-    border-bottom: 1px solid @bordergrey;
-    padding-bottom: 20px;
+  border-bottom: 1px solid @bordergrey;
+  padding-bottom: 20px;
 }
 
 .form__goals-list-item {
-    padding: 10px 0;
+  padding: 10px 0;
 }
 
 .form__goals-list-item-text {
-    padding-left: 10px;
+  padding-left: 10px;
 }
 
 .form__contact-info-header {
-    .fontsetup(@Oswald, @title, @regular);
-    width: 280px;
+  .fontsetup(@Oswald, @title, @regular);
+  width: 280px;
 }
 
 .form__contact-info-list-item-input {
-    .inputstyle
+  .inputstyle;
 }
 
 .form__textarea-describe-placeholder {
-    border: 1px solid @bordergrey;
-    padding: 7px;
-    text-align: center;
-    margin-top: 10px;
-}   
-
-// how to set paddings between lines?
-.form__more-options-list-item-label {
-    padding: 10px 0;
+  border: 1px solid @bordergrey;
+  padding: 7px;
+  text-align: center;
+  margin-top: 10px;
 }
 
+.form__more-options-list-item-input {
+  margin: 10px;
+}

@@ -1,35 +1,35 @@
 @import "../variables.less";
 
 .cards-section {
-    margin: 0 @margincommon;
+  margin: 0 @margincommon;
 }
 
 .card {
-    background-color: @grey;
-    padding: 22px;
+  background-color: @grey;
+  padding: 22px;
 }
 
 .card__title {
-    .fontsetup(@Oswald, @title, @regular);
-    text-transform: uppercase;
-    font-weight: @regular;
+  .fontsetup(@Oswald, @title, @regular);
+  text-transform: uppercase;
+  font-weight: @regular;
 }
 
 .card__description {
-    font-size: @paragraph;
-    border-bottom: 1px solid @bordergrey;
-    padding-bottom: 15px;
+  font-size: @paragraph;
+  border-bottom: 1px solid @bordergrey;
+  padding-bottom: 15px;
 }
 
 .card__learn-more {
-    .fontsetup(@Oswald, @links, @regular);
-    text-transform: uppercase;
-    a:link {
-        text-decoration:none;
-    }
+  .fontsetup(@Oswald, @links, @regular);
+  text-transform: uppercase;
+
+  a:link {
+    text-decoration: none;
+  }
 }
 
 .card__icon-wrapper {
-    background-color: @accentgreen;
+  background-color: @accentgreen;
 }
-
