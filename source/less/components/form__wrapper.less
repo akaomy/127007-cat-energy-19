@@ -101,6 +101,29 @@
 
 .form__contact-info-list-item-input {
   .inputstyle;
+  box-sizing: border-box;
+  padding-right: 20px;
+}
+
+.form__contact-info-list-item-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  &:after {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url('../../img/mail.png');
+    // background-image: url('../../img/phone.png');
+    background-position: 50%;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+  }
 }
 
 .form__textarea-describe-placeholder {
